@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Inter", sans-serif;
+     text-decoration: none;
+    }
+    :root {
+        --bg-color: #222222;
+        --btn-color: #8567f5;
+        --text-color: #fff;
+    }
+    body {
+        background-color: var(--bg-color);/*cor de fundo */
+        display: flex; /* ativa o flex-box */
+        justify-content: center;/* centralizar */
+        align-items: center;/* centralizar */
+        min-height: 100vh;
+        text-align: center;
+    }
+    .app, .info, .btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .app {
+        gap: 50px;
+        color: var(--text-color);
+
+        & info {
+            gap: 10px;
+            align-items: center;
+        }
+        & .btn {
+            gap: 25px;
+            & a {
+                width: 100%;
+                color: var(--text-color);
+                background-color: var(--btn-color);
+                text-align: center;
+                padding: 20px 0px;
+                border-radius: 100px;
+                border: 2px solid var(--text-color);
+            }
+        }
+    }
